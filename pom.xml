@@ -37,6 +37,13 @@
       <artifactId>allure-junit5</artifactId>
       <version>2.25.0</version>
     </dependency>
+    <!-- https://mvnrepository.com/artifact/org.assertj/assertj-core -->
+    <dependency>
+      <groupId>org.assertj</groupId>
+      <artifactId>assertj-core</artifactId>
+      <version>3.27.3</version>
+      <scope>test</scope>
+    </dependency>
     <!-- SLF4J API (у вас уже есть) -->
     <dependency>
       <groupId>org.slf4j</groupId>
@@ -49,6 +56,13 @@
       <groupId>ch.qos.logback</groupId>
       <artifactId>logback-classic</artifactId>
       <version>1.4.11</version>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/org.aspectj/aspectjweaver -->
+    <dependency>
+      <groupId>org.aspectj</groupId>
+      <artifactId>aspectjweaver</artifactId>
+      <version>1.9.24</version>
+      <scope>runtime</scope>
     </dependency>
   </dependencies>
 
@@ -80,7 +94,7 @@
         <version>2.14</version>
         <configuration>
           <testFailureIgnore>false</testFailureIgnore>
-          <argLine>-javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/1.9.21/aspectjweaver-1.9.21.jar"</argLine>
+          <argLine>-javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/1.9.24/aspectjweaver-1.9.24.jar"</argLine>
           <properties>
             <property>
               <name>listener</name>
