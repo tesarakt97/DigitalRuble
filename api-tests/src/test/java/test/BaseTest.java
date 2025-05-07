@@ -13,7 +13,7 @@ import utils.TestProperties;
 
 import static io.restassured.RestAssured.given;
 
-@DisplayName("Тест")
+@DisplayName("Тест api")
 @Epic("Тестовый эпик")
 @Feature("Тестовая фича")
 public class BaseTest {
